@@ -69,7 +69,7 @@ class CharacteristicsViewController: HMCatalogViewController, HMAccessoryDelegat
     }
     
     /// Reloads the table view and stops the refresh control.
-    func reloadTableView() {
+    @IBAction func reloadTableView() {
         setNotificationsEnabled(true)
         tableViewDataSource.service = service
         refreshControl?.endRefreshing()

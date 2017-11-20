@@ -35,15 +35,13 @@ class SwitchCharacteristicCell: CharacteristicCell {
             }
         }
     }
-    
     /**
-        Responds to the switch updating and sets the
-        value to the switch's value.
-        
-        - parameter valueSwitch: The switch that updated.
-    */
-    func didChangeSwitchValue(_ valueSwitch: UISwitch) {
+     Responds to the switch updating and sets the
+     value to the switch's value.
+     
+     - parameter valueSwitch: The switch that updated.
+     */
+    @IBAction func didChangeSwitchValue(_ sender: UISwitch) {
         setValue(valueSwitch.isOn as NSNumber?, notify: true)
     }
-    
 }
